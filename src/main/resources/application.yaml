@@ -10,12 +10,10 @@ spring:
    connection:
     connect-timeout : 10s
     init-query-timeout: 10s
- 
 datastax.astra:
- secure-connect-bundle: secure-connect.zip
-
-astra.db:
- id: 12067f30-d731-44cb-86ee-53185491ebd7
- region: europe-west1
- keyspace: main
- application.token: AstraCS:IJrcmmSRONFOHFRgmWYxZqoB:bf23f11dc14ca3b013ca8da12b9b1ebaaf6332a691f8ea652e714ce10886481d
+  secure-connect-bundle: secure-connect.zip
+  
+astra.db.id: 12067f30-d731-44cb-86ee-53185491ebd7
+astra.db.region: europe-west1
+astra.db.keyspace: main
+application.token: AstraCS:IJrcmmSRONFOHFRgmWYxZqoB:bf23f11dc14ca3b013ca8da12b9b1ebaaf6332a691f8ea652e714ce10886481d
