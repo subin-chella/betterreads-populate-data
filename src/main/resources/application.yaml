@@ -1,3 +1,9 @@
+spring.application.name: betterreads-data-loader
+
+datadump.location:
+ author: C:\Users\LENOVO\git\betterreads-populate-data\test-authors.txt
+ works:  C:\Users\LENOVO\git\betterreads-populate-data\test-works.txt
+
 spring:
  data:
   cassandra:
