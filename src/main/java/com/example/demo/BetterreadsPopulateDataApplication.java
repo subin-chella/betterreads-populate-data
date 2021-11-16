@@ -97,7 +97,7 @@ public class BetterreadsPopulateDataApplication {
 				try {
 					jsonObject = new JSONObject(jsonString);
 					Book book = new Book();
-					book.setId(jsonObject.optString("title").replace("/works", ""));
+					book.setId(jsonObject.optString("key").replace("/works/", ""));
 					JSONArray authorJSONArray = jsonObject.optJSONArray("authors");
 					if (authorJSONArray != null) {
 						List<String> lst = new ArrayList<>();
@@ -160,7 +160,7 @@ public class BetterreadsPopulateDataApplication {
 
 	@PostConstruct
 	public void start() {
-		//initAuthor();
+		initAuthor();
 		initWorks();
 
 	}
